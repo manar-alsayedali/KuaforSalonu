@@ -1,4 +1,4 @@
-namespace KuaforSalonu.Models
+namespace Kuafor_Salonu.Models
 {
     public class ErrorViewModel
     {
