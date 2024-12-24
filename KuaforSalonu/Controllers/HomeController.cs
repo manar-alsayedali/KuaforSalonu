@@ -1,8 +1,8 @@
-﻿using System.Diagnostics;
-using KuaforSalonu.Models;
+using Kuafor_Salonu.Models;
 using Microsoft.AspNetCore.Mvc;
-
-namespace KuaforSalonu.Controllers
+using System.Diagnostics;
+    
+namespace Kuafor_Salonu.Controllers
 {
     public class HomeController : Controller
     {
