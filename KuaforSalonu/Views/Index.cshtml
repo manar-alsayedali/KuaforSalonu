@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Admin Paneli";
+}
+<div class="container mt-5">
+    <!-- Başlık Box -->
+    <div class="bg-white p-4 rounded shadow mb-5 text-center">
+        <h2 class="fw-bold">Admin Paneli</h2>
+        <p class="text-muted mb-0">Salonunuzu ve çalışanlarınızı kolayca yönetin</p>
+    </div>
+
+    <div class="row mt-5">
+        <!-- Yönetme İşlemleri -->
+        <div class="col-md-6 text-start">
+            <h4 class="mb-4">Yönetme İşlemleri</h4>
+            <div class="d-grid gap-2">
+                <a class="btn btn-rose btn-sm shadow rounded" href="@Url.Action("ManageSalon", "Admin")">Salonu Yönet</a>
+                <a class="btn btn-rose btn-sm shadow rounded" href="@Url.Action("ManageServices", "Admin")">Servisleri Yönet</a>
+                <a class="btn btn-rose btn-sm shadow rounded" href="@Url.Action("ManageEmployees", "Admin")">Çalışanları Yönet</a>
+                <a class="btn btn-rose btn-sm shadow rounded" href="@Url.Action("ApproveAppointments", "Admin")">Randevuları Onayla</a>
+                <a class="btn btn-rose btn-sm shadow rounded" href="@Url.Action("EmployeeEarnings", "Admin")">Çalışanların Kazancı</a>
+            </div>
+        </div>
+
+        <!-- Ekleme İşlemleri -->
+        <div class="col-md-5 offset-md-1 text-start">
+            <h4 class="mb-4">Ekleme İşlemleri</h4>
+            <div class="d-grid gap-2">
+                <a class="btn btn-rose btn-sm shadow rounded" href="@Url.Action("AddService", "Admin")">Servis Ekle</a>
+                <a class="btn btn-rose btn-sm shadow rounded" href="@Url.Action("AddEmployee", "Admin")">Çalışan Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Arka plan resmi */
+    body {
+        background-image: url('/images/background.jpg'); /* Arka plan resmini doğru klasöre yükleyin */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Rose pembe düğme stili */
+    .btn-rose {
+        background-color: #FFB6C1; /* Rose pembe */
+        color: white;
+        border: none;
+    }
+
+        .btn-rose:hover {
+            background-color: #FFC0CB; /* Daha açık rose hover rengi */
+        }
+
+        .btn-rose:focus {
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(255, 182, 193, 0.5);
+        }
+
+    /* Daha küçük boyut için btn-sm */
+    .btn-sm {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Başlık box */
+    .bg-white {
+        background-color: #FFFFFF;
+    }
+
+    .rounded {
+        border-radius: 10px;
+    }
+
+    .shadow {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+</style>
